@@ -3,7 +3,7 @@ class Student {
 	String firstName;
 	String lastName;
 
-	String [] grades;
+	double [] grades;
 	//TODO constructor
 
 	//TODO seters & getters
