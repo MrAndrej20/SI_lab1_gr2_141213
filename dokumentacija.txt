@@ -1,0 +1,85 @@
+Repo: https://github.com/MrAndrej20/SI_lab1_gr2_141213
+
+-- kloniram repo
+git clone https://github.com/finkiSI/SI_lab1_gr2.git
+-- gledam koe remote mi e zakaceno momentalno
+git remote -v
+-- mestam remote na origin da mi bide moeto repo
+git remote set-url origin git@github.com:MrAndrej20/SI_lab1_gr2_141213.git
+-- status na git
+git status
+-- dodadi gi site fajlovi za komit
+git add .
+-- dodaj gi site promeneti fajlovi i komitni so poraka
+git commit -am "initial commit"
+-- butni gi site komitovi na remote
+git push
+-- komitni gi zakacenite promeni so poraka
+git commit -m "students.csv file added"
+-- kreiraj nov branch od master(momentalniot) so ime facultyFeature i prefrli se na nego
+git checkout -b facultyFeature
+-- vrati nazad 1 komit
+git reset HEAD~1
+-- zakaci go momentalniot branch so branchot na origin so ime facultyFeature i butni go kodot
+git push --set-upstream origin facultyFeature
+-- preflrise na master branch
+git checkout master
+-- spoi go facultyFeature so momentalniot branch(master)
+git merge facultyFeature
+
+GIT LOG:
+
+commit 3ab5dcc628a8f7a1db88a10f7cb56f4197e5cc18 (HEAD -> master, origin/master, origin/HEAD)
+Merge: da3c3ef ce9e43a
+Author: Andrej Sarafimovski <andrej.sarafimovski@microtica.com>
+Date:   Wed Mar 25 12:52:37 2020 +0100
+
+    Merge branch 'facultyFeature'
+
+commit da3c3ef8a04e5fb3b2e174ae0890b5447040613b
+Author: Andrej Sarafimovski <andrej.sarafimovski@microtica.com>
+Date:   Wed Mar 25 12:50:32 2020 +0100
+
+    student class finished
+
+commit ce9e43a657e6c0c241453d07f120700816f1d277 (origin/facultyFeature, facultyFeature)
+Author: Andrej Sarafimovski <andrej.sarafimovski@microtica.com>
+Date:   Wed Mar 25 12:49:52 2020 +0100
+
+    added Faculty class, added new students and modified students in students.csv
+
+commit 6cbaecc38e4700471d67f7df1955185e06e27921
+Author: Andrej Sarafimovski <andrej.sarafimovski@microtica.com>
+Date:   Wed Mar 25 12:10:19 2020 +0100
+
+    student class finished
+
+commit 09a2d9fe524b796ad3d6bd4bfb638d9988eb87a1
+Author: Andrej Sarafimovski <andrej.sarafimovski@microtica.com>
+Date:   Wed Mar 25 11:52:19 2020 +0100
+
+    changed grades array type from string to double
+
+commit 7f5518a446c10140131051a6ac0fa60d4c9a5898
+Author: Andrej Sarafimovski <andrej.sarafimovski@microtica.com>
+Date:   Wed Mar 25 11:51:49 2020 +0100
+
+    grades list added
+
+commit cadae7bb50a439f42fb25fcee99061defe874463
+Author: Andrej Sarafimovski <andrej.sarafimovski@microtica.com>
+Date:   Wed Mar 25 11:45:47 2020 +0100
+
+    students.csv file added
+
+commit 40de0827110ed1dec5c9160b39a26c2f9dc08727
+Author: Stefan Andonov <stefan5andonov@yahoo.com>
+Date:   Thu Mar 12 17:39:55 2020 +0100
+
+    error fixed:
+
+commit 3254e737497f122c0d27a2a89423d30d6be77015
+Author: Stefan Andonov <stefan5andonov@yahoo.com>
+Date:   Thu Mar 12 17:38:04 2020 +0100
+
+    initial commit
