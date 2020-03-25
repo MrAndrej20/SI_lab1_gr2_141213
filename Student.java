@@ -59,10 +59,6 @@ class Student {
 	}
 
 	public int ECTSCredits() {
-		int credits = 0;
-		for (int i = 0; i < this.grades.length; i++) {
-			credits += this.grades[i] * 6;
-		}
-		return credits;
+		return this.grades.length * 6;
 	}
 }
